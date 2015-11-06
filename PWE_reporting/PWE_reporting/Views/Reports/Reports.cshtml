@@ -11,7 +11,7 @@
             <tr><th style="max-width:50%">Report Name</th><th style="max-width:300px">Open report in new tab</th><th style="max-width:50%">Download Excel</th></tr>
             @foreach (var report in Model)
             {                                                                                                                                                                                                                                //text value      //view to look for  //controller  //parameters to be passed                   //parameters for actionlink tag
-                <tr><td width="10%">@report.reportName</td><td width="10%">@Html.ActionLink("View Report", "ViewReport", null, new { reportName = @report.reportName }, new { target = "_blank" })</td><td width="10%"> @Html.ActionLink("Download Report", "DownloadReport", "Reports", new { reportName = @report.reportName }, new {@type="button", @role="button", @class = "btn btn-primary btn-sm active", target = "_blank" })</td></tr>
+                <tr><td width="10%">@report.ReportName</td><td width="10%">@Html.ActionLink("View Report", "ViewReport", null, new { reportName = @report.ReportName }, new { target = "_blank" })</td><td width="10%"> @Html.ActionLink("Download Report", "DownloadReport", "Reports", new { reportName = @report.ReportName }, new {@type="button", @role="button", @class = "btn btn-primary btn-sm active", target = "_blank" })</td></tr>
             }
         </table>
     

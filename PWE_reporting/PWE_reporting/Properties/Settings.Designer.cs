@@ -32,5 +32,15 @@ namespace PWE_reporting.Properties {
                 return ((string)(this["PWE_reporting_ReportWebService_ReportExecutionService"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.110.190.71:80/ReportServer/ReportService2005.asmx")]
+        public string PWE_reporting_ReportWebReference_ReportingService2005 {
+            get {
+                return ((string)(this["PWE_reporting_ReportWebReference_ReportingService2005"]));
+            }
+        }
     }
 }
